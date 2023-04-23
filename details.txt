@@ -1,0 +1,88 @@
+React Recap till Date:
+
+Day 2:
+
+  Setup react project
+    npx create-react-app --> creates the below structure
+
+      package.json --> info about the project, dependencies/package used in project
+        packages:
+          react --> enables the usage jsx
+          react-dom --> to create virtual dom for comparison of actual vs virtual dom
+          react-scripts -->
+            start ---> sets a development environment with live reloading
+            build ---> optimizes the final build ( reduce/minifies javascript codes into es5 syntax understandable only browser )
+      package-lock.json --> info about the packages/version of the packages and activity installation
+
+  Undetstanding JSX:
+    jsx --> javascript xml ( js file involing html like syntaxes )
+    babel for converting jsx/react codes to normal codes which a browser can understand
+
+  Components (simple HTML layout to reusable react components)
+
+  Undetstanding the components
+  Components - In depth
+
+  Passing data through props
+    curly braces is must if the props value is an object or array
+    curly braces is not required if the prop value is a sting value
+  
+  external css class or inline style atributes:
+    external css: when same style is repeated many times use external cssing
+    inline style: when props dependent styling or only single tag using the style
+
+
+React- Day -3 : props, state, rendering
+  Working with array lists --> rendering using array map
+  Usage of key --> identifying element in dom, do not use index
+  Conditional rendering
+    using conditional operator( ? ) similar to if/else
+    using && operator only if block
+  Handling Events:
+    refer the onClick for Button Component in Keypad.jsx
+  Props vs state
+
+    state:
+      useState ==> creates a dyanmic variable and a function to change the value
+      const [count, setCount] = useState(0);
+      count --> state value which can be changed
+      setCount --> function used to change the value
+    
+    props:
+      static value passed from parent ( can be changed if the parent is re-rendered )
+    statefull component:
+      component using useState or someother state which changes
+    stateless/pure component:
+      component with only props no dynamic values state inside it
+  
+  passing data from child to parent == Passing dynamic data to component
+    refer handleTxt
+
+React- Day -4 : React components
+  Component life cycle
+  Reusable components 
+  
+React- Day -5 : react hooks
+  What is hook?
+  Lifecycle of component:
+    mounting, updating, unmount
+  useState, useEffect
+  Props drilling
+
+React- Day -6 : react router
+  react-router-dom
+  BrouserRouter, Switch, Link, Route, url params
+
+Deploying react to netlify
+
+Questions:
+  1. working accordion, use of the data atributes
+  2. assets & media ( pdf, docs )
+  3. intro to svg -->https://www.w3schools.com/graphics/svg_intro.asp
+  4. form with radio, checkbox, select --> home work ---> check for attribute called checked ( grouping of radio or checkbox name attribute should be same for all options **checked** is the value attributes )
+  5. navlink and link ==> https://reactrouter.com/en/main/components/nav-link
+  6. snake_case & camelCase & MyComponent
+  7. className --> multiple classes for a tag 
+    module css --> multiple class can be used only with template literals
+    (https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+
